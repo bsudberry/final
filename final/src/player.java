@@ -39,17 +39,17 @@ public class player
 			}
 		else if (choice == 2) 
 			{
-			System.out.println("Okay you're  using board 2");
+			System.out.println("Okay you're using board 2");
 			boardChoice=2;
 			}
 		else if (choice == 3) 
 			{
-			System.out.println("Okay you're  using board 3");
+			System.out.println("Okay you're using board 3");
 			boardChoice=3;
 			}
 		else if (choice == 4) 
 			{
-			System.out.println("Okay you're  using board 4");
+			System.out.println("Okay you're using board 4");
 			boardChoice=4;
 			}
 		else
@@ -61,7 +61,7 @@ public class player
 		}
 public static void startGame(int gameBoard)
 	{
-	
+	 
 	}
-
+ 
 	}
