@@ -4,11 +4,12 @@ public class gameRunnerBattleship
 
 	public static void main(String[] args)throws InterruptedException
 		{
-		 player.askNameToPlay();
+		 board.createBoard();
+//		 player.askNameToPlay();
 		 board.displayBoard1();
 		 board.displayBoard2();
-		 board.displayBoard3();
-		 board.displayBoard4();
+//		 board.displayBoard3();
+//		 board.displayBoard4();
 		 player.whichBoard();
 		}
 
