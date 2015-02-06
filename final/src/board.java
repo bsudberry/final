@@ -93,6 +93,23 @@ public class board
 		}
 	public static void displayBoard3()
 		{
+			{
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			board3[][]="X";
+			}
 		System.out.println("    1   2   3   4   5   6");
 		System.out.println(" ---------------------------");
 		System.out.println("A | " + board3[0][0] + " | "  + board3[0][1] + " | " + board3[0][2] + " | " + board3[0][3] + " | " + board3[0][4] + " | "+ board3[0][5] + " | ");
@@ -111,21 +128,42 @@ public class board
 		}
 	public static void displayBoard4()
 		{
+			{
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
+			board4[][]="X";
 		System.out.println("    1   2   3   4   5   6");
 		System.out.println(" ---------------------------");
-		System.out.println("A | " + board[0][0] + " | "  + board[0][1] + " | " + board[0][2] + " | " + board[0][3] + " | " + board[0][4] + " | "+ board[0][5] + " | ");
+		System.out.println("A | " + board4[0][0] + " | "  + board4[0][1] + " | " + board4[0][2] + " | " + board4[0][3] + " | " + board4[0][4] + " | "+ board4[0][5] + " | ");
 		System.out.println(" ---------------------------");
-		System.out.println("B | " + board[1][0] + " | "  + board[1][1] + " | " + board[1][2] + " | " + board[1][3] + " | " + board[1][4] + " | "+ board[1][5] + " | " ); 	
+		System.out.println("B | " + board4[1][0] + " | "  + board4[1][1] + " | " + board4[1][2] + " | " + board4[1][3] + " | " + board4[1][4] + " | "+ board4[1][5] + " | " ); 	
 		System.out.println(" ---------------------------");
-		System.out.println("C | " + board[2][0] + " | "  + board[2][1] + " | " + board[2][2] + " | " + board[2][3] + " | " + board[2][4] + " | "+ board[2][5] + " | ");
+		System.out.println("C | " + board4[2][0] + " | "  + board4[2][1] + " | " + board4[2][2] + " | " + board4[2][3] + " | " + board4[2][4] + " | "+ board4[2][5] + " | ");
 		System.out.println(" ---------------------------");
-		System.out.println("D | " + board[3][0] + " | "  + board[3][1] + " | " + board[3][2] + " | " + board[3][3] + " | " + board[3][4] + " | "+ board[3][5] + " | ");
+		System.out.println("D | " + board4[3][0] + " | "  + board4[3][1] + " | " + board4[3][2] + " | " + board4[3][3] + " | " + board4[3][4] + " | "+ board4[3][5] + " | ");
 		System.out.println(" ---------------------------");
-		System.out.println("E | " + board[4][0] + " | "  + board[4][1] + " | " + board[4][2] + " | " + board[4][3] + " | " + board[4][4] + " | "+ board[4][5] + " | "); 	
+		System.out.println("E | " + board4[4][0] + " | "  + board4[4][1] + " | " + board4[4][2] + " | " + board4[4][3] + " | " + board4[4][4] + " | "+ board4[4][5] + " | "); 	
 		System.out.println(" ---------------------------");
-		System.out.println("F | " + board[5][0] + " | "  + board[5][1] + " | " + board[5][2] + " | " + board[5][3] + " | " + board[5][4] + " | "+ board[5][5] + " | " );
+		System.out.println("F | " + board4[5][0] + " | "  + board4[5][1] + " | " + board4[5][2] + " | " + board4[5][3] + " | " + board4[5][4] + " | "+ board4[5][5] + " | " );
 		System.out.println(" ---------------------------");
 		System.out.println("");
 		}
 	}
 
+
+	
+	
+	
+	
