@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 public class board
 	{
@@ -6,6 +8,7 @@ public class board
 	public static String [][] board3=new String [6][6];
 	public static String [][] board4=new String [6][6];
 	static String pawn;
+	static ArrayList<ArrayList<space>> boardSpots = new ArrayList<ArrayList<space>>();
 	public static void createBoard()
 		{
 			{
@@ -23,6 +26,7 @@ public class board
 		}
 	public static void displayBoard1()
 		{
+		System.out.println("This is board 1");
 			{
 			board1[0][0]="X";
 			board1[0][1]="X";
@@ -39,6 +43,8 @@ public class board
 			board1[3][0]="X";
 			board1[4][0]="X";
 			board1[5][3]="X";
+			board1[5][2]="X";
+			board1[5][1]="X";
 			}
 		System.out.println("    1   2   3   4   5   6");
 		System.out.println(" ---------------------------");
@@ -55,9 +61,29 @@ public class board
 		System.out.println("F | " + board1[5][0] + " | "  + board1[5][1] + " | " + board1[5][2] + " | " + board1[5][3] + " | " + board1[5][4] + " | "+ board1[5][5] + " | " );
 		System.out.println(" ---------------------------");
 		System.out.println("");
+		
+		for(int i=0; i<6; i++)
+			{
+			for(int z=0; z< 6; z++)
+				{
+				if(board1[i][z].equals("X"))
+					{
+					ArrayList <space> row = new ArrayList<space>(); 
+					row.add(new space(false, true, i,z));
+					boardSpots.add(row);
+					}
+				else
+					{
+					ArrayList <space> row = new ArrayList<space>(); 
+					row.add(new space(false, false, i,z));
+					boardSpots.add(row);
+					}
+				}
+			}
 		}
 	public static void displayBoard2()
 		{
+		System.out.println("This is board 2");
 			{
 			board2[0][5]="X";
 			board2[1][5]="X";
@@ -74,6 +100,8 @@ public class board
 			board2[0][0]="X";
 			board2[1][0]="X";
 			board2[3][2]="X";
+			board2[3][1]="X";
+			board2[3][0]="X";
 			}
 		System.out.println("    1   2   3   4   5   6");
 		System.out.println(" ---------------------------");
@@ -90,25 +118,45 @@ public class board
 		System.out.println("F | " + board2[5][0] + " | "  + board2[5][1] + " | " + board2[5][2] + " | " + board2[5][3] + " | " + board2[5][4] + " | "+ board2[5][5] + " | " );
 		System.out.println(" ---------------------------");
 		System.out.println("");
+		for(int i=0; i<6; i++)
+			{
+			for(int z=0; z< 6; z++)
+				{
+				if(board2[i][z].equals("X"))
+					{
+					ArrayList <space> row = new ArrayList<space>(); 
+					row.add(new space(false, true, i,z));
+					boardSpots.add(row);
+					}
+				else
+					{
+					ArrayList <space> row = new ArrayList<space>(); 
+					row.add(new space(false, false, i,z));
+					boardSpots.add(row);
+					}
+				}
+			}
 		}
 	public static void displayBoard3()
 		{
+		System.out.println("This is board 3");
 			{
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
-			board3[][]="X";
+			board3[2][2]="X";
+			board3[3][2]="X";
+			board3[4][2]="X";
+			board3[5][2]="X";
+			board3[0][0]="X";
+			board3[0][1]="X";
+			board3[0][2]="X";
+			board3[0][3]="X";
+			board3[3][0]="X";
+			board3[4][0]="X";
+			board3[2][0]="X";
+			board3[0][5]="X";
+			board3[1][5]="X";
+			board3[3][4]="X";
+			board3[4][4]="X";
+			board3[5][4]="X";
 			}
 		System.out.println("    1   2   3   4   5   6");
 		System.out.println(" ---------------------------");
@@ -125,25 +173,45 @@ public class board
 		System.out.println("F | " + board3[5][0] + " | "  + board3[5][1] + " | " + board3[5][2] + " | " + board3[5][3] + " | " + board3[5][4] + " | "+ board3[5][5] + " | " );
 		System.out.println(" ---------------------------");
 		System.out.println("");
+		for(int i=0; i<6; i++)
+			{
+			for(int z=0; z< 6; z++)
+				{
+				if(board3[i][z].equals("X"))
+					{
+					ArrayList <space> row = new ArrayList<space>(); 
+					row.add(new space(false, true, i,z));
+					boardSpots.add(row);
+					}
+				else
+					{
+					ArrayList <space> row = new ArrayList<space>(); 
+					row.add(new space(false, false, i,z));
+					boardSpots.add(row);
+					}
+				}
+			}
 		}
 	public static void displayBoard4()
 		{
+		System.out.println("This is board 4");
 			{
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
-			board4[][]="X";
+			board4[0][0]="X";
+			board4[0][1]="X";
+			board4[0][5]="X";
+			board4[1][5]="X";
+			board4[2][5]="X";
+			board4[3][4]="X";
+			board4[4][4]="X";
+			board4[5][4]="X";
+			board4[4][2]="X";
+			board4[5][2]="X";
+			board4[3][0]="X";
+			board4[4][0]="X";
+			board4[5][0]="X";
+			board4[2][2]="X";
+			board4[2][3]="X";
+			}
 		System.out.println("    1   2   3   4   5   6");
 		System.out.println(" ---------------------------");
 		System.out.println("A | " + board4[0][0] + " | "  + board4[0][1] + " | " + board4[0][2] + " | " + board4[0][3] + " | " + board4[0][4] + " | "+ board4[0][5] + " | ");
@@ -159,6 +227,24 @@ public class board
 		System.out.println("F | " + board4[5][0] + " | "  + board4[5][1] + " | " + board4[5][2] + " | " + board4[5][3] + " | " + board4[5][4] + " | "+ board4[5][5] + " | " );
 		System.out.println(" ---------------------------");
 		System.out.println("");
+		for(int i=0; i<6; i++)
+			{
+			for(int z=0; z< 6; z++)
+				{
+				if(board4[i][z].equals("X"))
+					{
+					ArrayList <space> row = new ArrayList<space>(); 
+					row.add(new space(false, true, i,z));
+					boardSpots.add(row);
+					}
+				else
+					{
+					ArrayList <space> row = new ArrayList<space>(); 
+					row.add(new space(false, false, i,z));
+					boardSpots.add(row);
+					}
+				}
+			}
 		}
 	}
 

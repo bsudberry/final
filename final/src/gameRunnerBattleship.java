@@ -8,9 +8,10 @@ public class gameRunnerBattleship
 //		 player.askNameToPlay();
 		 board.displayBoard1();
 		 board.displayBoard2();
-//		 board.displayBoard3();
-//		 board.displayBoard4();
+		 board.displayBoard3();
+		 board.displayBoard4();
 		 player.whichBoard();
+		 Ai.chooseRandomMove();
 		}
 
 	}

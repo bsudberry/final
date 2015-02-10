@@ -1,12 +1,19 @@
-
+import java.util.Scanner;
 public class Ai
 	{
-
-	public static void main(String[] args)
+	static int computerMove;
+	static int computerMove1;
+	static String [] letters = {"A", "B", "C", "D", "E", "F"}; 
+	public static void chooseRandomMove() throws InterruptedException
 		{
-		// TODO Auto-generated method stub
-
+		int computerMoveX = (int) (Math.random() * 6);
+		System.out.println(letters[computerMoveX]);
+		int computerMoveY = (int) (Math.random() *6);
+		System.out.println(computerMoveY);
+		System.err.println("The missle has been launched");
 		}
 
+	
+	
+	
 	}
-  

@@ -35,33 +35,59 @@ public class player
 		if (choice == 1)
 			{
 			System.out.println("Okay you're using board 1");
-			boardChoice=1;
+			startGame(board.board1,1);
 			}
 		else if (choice == 2) 
 			{
 			System.out.println("Okay you're using board 2");
-			boardChoice=2;
+			startGame(board.board2,2);
 			}
 		else if (choice == 3) 
 			{
 			System.out.println("Okay you're using board 3");
-			boardChoice=3;
+			startGame(board.board3,3);
 			}
 		else if (choice == 4) 
 			{
 			System.out.println("Okay you're using board 4");
-			boardChoice=4;
+			startGame(board.board4,4);
 			}
 		else
 			{
 			System.out.println("Not valid try again!!");
 			whichBoard();
 			}
-		startGame(boardChoice);
-		}
-public static void startGame(int gameBoard)
+				}
+public static void startGame(String [][]gameBoard, int s)
 	{
-	 
+	displayBoard(s);
+	}
+
+public static void displayBoard(int s)
+	{
+	switch(s)
+		{
+		case 1:
+			{
+		    board.displayBoard1();
+		    break;
+			}
+		case 2:
+			{
+			board.displayBoard2();
+			 break;
+			}
+		case 3:
+			{
+			board.displayBoard3();
+			 break;
+			}
+		case 4:
+			{
+			board.displayBoard4();
+			 break;
+			}
+		}
 	}
  
 	}
