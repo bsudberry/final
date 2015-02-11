@@ -23,7 +23,7 @@ public class player
 			}
 
 		}
-	public static void whichBoard()
+	public static void whichBoard() throws InterruptedException
 		{
 		int boardChoice=0;
 		System.out.println("Which board would you like to use to play?");
@@ -58,9 +58,12 @@ public class player
 			whichBoard();
 			}
 				}
-public static void startGame(String [][]gameBoard, int s)
+public static void startGame(String [][]gameBoard, int s) throws InterruptedException
 	{
 	displayBoard(s);
+	Ai.chooseRandomMove(gameBoard);
+	displayBoard(s);
+	Thread.sleep(200);
 	}
 
 public static void displayBoard(int s)

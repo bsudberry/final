@@ -29,6 +29,7 @@ public class space
 		{
 		Hit=H;
 		Ship=S;
+		
 		}
 	}
 
