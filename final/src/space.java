@@ -15,7 +15,7 @@ public class space
 	public void setHit(boolean hit)
 		{
 		Hit = hit;
-		}
+		} 
 	public boolean isShip()
 		{
 		return Ship;

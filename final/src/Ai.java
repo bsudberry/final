@@ -3,6 +3,8 @@ public class Ai
 	{
 	static int computerMove;
 	static int computerMove1;
+	static int X;
+	static int Y;
 	static String [] letters = {"A", "B", "C", "D", "E", "F"}; 
 	public static void chooseRandomMove(String [][]gameBoard) throws InterruptedException
 		{
@@ -28,7 +30,7 @@ public class Ai
 				{
 				chooseRandomMove(gameBoard);
 				}
-			}
+		}
 	public static void checkForX(String [][]gameBoard)
 			{
 			int counter=0;
@@ -41,7 +43,7 @@ public class Ai
 						{
 						return;
 						}
-					else if (counter ==36 && !gameBoard[i][z].equals("X"))
+					else if (counter ==36 || !gameBoard[i][z].equals("X"))
 						{
 						System.out.println("Game Over!");
 						System.exit(0);
