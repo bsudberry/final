@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 
 
 public class player
@@ -59,10 +59,13 @@ public class player
 				}
 public static void startGame(String [][]gameBoard, int s) throws InterruptedException
 	{
-	showBoard(gameBoard); 
-	Ai.chooseRandomMove(gameBoard);
-	showBoard(gameBoard); 
-	Thread.sleep(200);
+	while (1==1)
+		{
+				Ai.checkForX(gameBoard);
+				Ai.chooseRandomMove(gameBoard);
+				showBoard(gameBoard); 
+				Thread.sleep(4000);
+				}
 	}
 
 public static String [][] chooseBoard(int s)

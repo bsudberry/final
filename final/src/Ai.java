@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; 
 public class Ai
 	{
 	static int computerMove;
@@ -6,6 +6,7 @@ public class Ai
 	static String [] letters = {"A", "B", "C", "D", "E", "F"}; 
 	public static void chooseRandomMove(String [][]gameBoard) throws InterruptedException
 		{
+		//This class generates a random number for the X and Y coordinates and prints the numbers
 		int computerMoveX = (int) (Math.random() * 6);
 		int computerMoveY = (int) (Math.random() *6);
 		checkMove(gameBoard, computerMoveX, computerMoveY);
@@ -27,14 +28,26 @@ public class Ai
 				{
 				chooseRandomMove(gameBoard);
 				}
-			
-			board.board1 = gameBoard; 
 			}
-	public static void checkForX()
+	public static void checkForX(String [][]gameBoard)
 			{
-			for(int i=0; i<6; i++)
+			int counter=0;
+			for(int i=0; i<6;i++)
 				{
-				
+				for(int z=0; z<6; z++)
+					{
+					if(gameBoard[i]
+					[z].equals("X"))
+						{
+						return;
+						}
+					else if (counter ==36 && !gameBoard[i][z].equals("X"))
+						{
+						System.out.println("Game Over!");
+						System.exit(0);
+						}
+					}
 				}
+			
 			}
 	}
