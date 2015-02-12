@@ -14,23 +14,21 @@ public class Ai
 	
 	public static void checkMove(String [][]gameBoard, int X, int Y) throws InterruptedException
 		{
-			if(gameBoard[X][Y].equals(" "))
+			if("X".equals(gameBoard[X][Y]))
 				{
-				gameBoard[X][Y]= "M";
-				return;
+				gameBoard[X][Y]= "H";
 				}
 
-			if(gameBoard[X][Y].equals("X"))
+			else if(gameBoard[X][Y].equals(" "))
 					{
-					gameBoard[X][Y] = "HH";
-					System.out.println("hi");
-					return;
+					gameBoard[X][Y] = "M";
 					}
 			else
 				{
 				chooseRandomMove(gameBoard);
 				}
 			
+			board.board1 = gameBoard; 
 			}
 	public static void checkForX()
 			{
