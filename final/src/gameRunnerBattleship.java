@@ -11,7 +11,7 @@ public class gameRunnerBattleship
 		 board.displayBoard3();
 		 board.displayBoard4();
 		 player.whichBoard();
-		} 
+		}  
 
 	}
   

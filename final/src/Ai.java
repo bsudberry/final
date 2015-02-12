@@ -18,7 +18,7 @@ public class Ai
 	public static void checkMove(String [][]gameBoard, int X, int Y) throws InterruptedException
 		{
 			if("X".equals(gameBoard[X][Y]))
-				{
+				{ 
 				gameBoard[X][Y]= "H";
 				}
 

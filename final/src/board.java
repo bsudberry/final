@@ -61,7 +61,7 @@ public class board
 		System.out.println("F | " + board1[5][0] + " | "  + board1[5][1] + " | " + board1[5][2] + " | " + board1[5][3] + " | " + board1[5][4] + " | "+ board1[5][5] + " | " );
 		System.out.println(" ---------------------------");
 		System.out.println("");
-		 
+		  
 		for(int i=0; i<6; i++)
 			{
 			for(int z=0; z< 6; z++)

@@ -47,7 +47,7 @@ public class player
 			startGame(chooseBoard(3),3);
 			}
 		else if (choice == 4) 
-			{
+			{ 
 			System.out.println("Okay you're using board 4");
 			startGame(chooseBoard(4),4);
 			}
@@ -64,7 +64,7 @@ public static void startGame(String [][]gameBoard, int s) throws InterruptedExce
 				Ai.checkForX(gameBoard);
 				Ai.chooseRandomMove(gameBoard);
 				showBoard(gameBoard); 
-//				Thread.sleep(4000);
+				Thread.sleep(4000);
 				}
 	}
 
