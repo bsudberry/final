@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 
 public class player
-	{
+	{ 
 	static String name; 
 	static int choiceName;
 	static int playOrNo;

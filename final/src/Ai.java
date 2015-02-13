@@ -1,7 +1,7 @@
 import java.util.Scanner; 
 public class Ai
 	{
-	static int computerMove;
+	static int computerMove; 
 	static int computerMove1;
 	static int X;
 	static int Y;
