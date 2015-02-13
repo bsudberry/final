@@ -1,52 +1,69 @@
 import java.util.Scanner; 
 
+import javax.swing.Icon;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 
 public class player
 	{
+	static String name; 
+	static int choiceName;
+	static int playOrNo;
+	static JFrame frame = new JFrame();
 	static Scanner userInput = new Scanner(System.in);
+	private static final long serialVersionUID = 1L;
 	public static void askNameToPlay()
+		{ 
+		name = JOptionPane.showInputDialog("What is your name?");  
+		JOptionPane.showMessageDialog(frame, "Hi, " + name);
+		Object[] options = {"Yes", "No"};
+		playOrNo = JOptionPane.showOptionDialog(frame, "Would you like to play Battleship?",
+				"Yes or No",
+				JOptionPane.YES_NO_CANCEL_OPTION,
+				JOptionPane.QUESTION_MESSAGE,
+				null, options, options[1]);
+		switch(playOrNo)
 		{
-		System.out.println("What is your name?");
-		String name = userInput.nextLine();
-		System.out.println("Hello," + name + " would you like to play Battleship?");
-		System.out.println(" (1) yes");
-		System.out.println(" (2) No");
-		int choice = userInput.nextInt();
-		if (choice == 1)
+		case 0:
 			{
-			System.out.println("Okay lets play!");
+			JOptionPane.showMessageDialog(frame, "Ok, lets play Battleship!");
+			break;
 			}
-		else if (choice == 2) 
+		case 1:
+		
 			{
-			System.out.println("Ok, maybe later");
+			JOptionPane.showMessageDialog(frame, "Ah, you don't.");
 			System.exit(0);
+			break;
 			}
+		}
 
 		}
 	public static void whichBoard() throws InterruptedException
 		{
-		System.out.println("Which board would you like to use to play?");
-		System.out.println(" (1) Board 1");
-		System.out.println(" (2) Board 2");
-		System.out.println(" (3) Board 3");
-		System.out.println(" (4) Board 4");
-		int choice = userInput.nextInt();
-		if (choice == 1)
+		Object[] choice = {"Board 1", "Board 2", "Board 3", "Board 4" };
+		choiceName = JOptionPane.showOptionDialog(frame, "Which board would you like to use?",
+				"Option",
+				JOptionPane.YES_NO_CANCEL_OPTION,
+				JOptionPane.QUESTION_MESSAGE,
+				null, choice, choice[3]);
+		if (choiceName==0)
 			{
 			System.out.println("Okay you're using board 1");
 			startGame(chooseBoard(1),1);
 			}
-		else if (choice == 2) 
+		else if (choiceName==1)
 			{
 			System.out.println("Okay you're using board 2");
 			startGame(chooseBoard(2),2);
 			}
-		else if (choice == 3) 
+		else if (choiceName==2)
 			{
 			System.out.println("Okay you're using board 3");
 			startGame(chooseBoard(3),3);
 			}
-		else if (choice == 4) 
+		else if (choiceName==3)
 			{ 
 			System.out.println("Okay you're using board 4");
 			startGame(chooseBoard(4),4);

@@ -13,7 +13,7 @@ public class Ai
 		int computerMoveY = (int) (Math.random() *6);
 		checkMove(gameBoard, computerMoveX, computerMoveY);
 		System.out.println("The missle has been launched at " +letters[computerMoveX]+ " " +(computerMoveY+1));
-		}
+		} 
 	
 	public static void checkMove(String [][]gameBoard, int X, int Y) throws InterruptedException
 		{

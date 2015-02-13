@@ -21,7 +21,7 @@ public class board
 					board3 [i][j]= " ";
 					board4 [i][j]= " ";
 					}
-				}
+				} 
 			}
 		}
 	public static void displayBoard1()
