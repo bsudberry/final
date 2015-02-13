@@ -2,7 +2,7 @@ import java.util.Scanner;
  
 
 public class space
-	{ 
+	{  
 	private boolean Hit;
 	private boolean Ship;
 	private int X;

@@ -1,7 +1,7 @@
  
 public class gameRunnerBattleship
 	{
- 
+  
 	public static void main(String[] args)throws InterruptedException
 		{
 		 board.createBoard();

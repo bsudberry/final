@@ -1,7 +1,7 @@
 import java.util.ArrayList; 
 
 
-public class board 
+public class board  
 	{
 	public static String [][] board1=new String [6][6];
 	public static String [][] board2=new String [6][6];
